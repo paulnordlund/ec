@@ -12,7 +12,7 @@
 }
 
 .logo {
-  max-width: 400px;
+  max-width: 320px;
 }
 
 .container {
@@ -22,12 +22,6 @@
 .text {
 	color: black;
 }
-
-#example_info {
-  white-space: wrap;
-}
-
-
 
 .ui.table.dataTable thead th.sorting_asc:after {
   /*content: '\f0d8';*/
@@ -42,4 +36,27 @@
 .ui.table.dataTable thead th.sorting:after {
     content: '\f0dc';
     opacity: 0.2;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    white-space: normal;
+}
+
+@media screen and (max-width: 768px) {
+
+  .ui.pagination.menu {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+  }    
+}
+
+@media screen and (min-width: 768px) {
+
+  div.dataTables_wrapper div.dataTables_info {
+      white-space: nowrap;
+  } 
+
 }
