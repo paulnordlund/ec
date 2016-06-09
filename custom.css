@@ -1,0 +1,45 @@
+* {
+	color: #F5F5F5;
+}
+
+.fullscreen {
+  background-color: rgb(57,87,121);
+  margin-top: 50px;
+}
+
+.top {
+  text-align: center;
+}
+
+.logo {
+  max-width: 400px;
+}
+
+.container {
+	margin: 40px 20px;
+}
+
+.text {
+	color: black;
+}
+
+#example_info {
+  white-space: wrap;
+}
+
+
+
+.ui.table.dataTable thead th.sorting_asc:after {
+  /*content: '\f0d8';*/
+  content: '\f160';
+}
+
+.ui.table.dataTable thead th.sorting_desc:after {
+  /*content: '\f0d7';*/
+  content: '\f161';
+}
+
+.ui.table.dataTable thead th.sorting:after {
+    content: '\f0dc';
+    opacity: 0.2;
+}
