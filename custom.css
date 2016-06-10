@@ -12,7 +12,8 @@
 }
 
 .logo {
-  max-width: 320px;
+  width: 75%;
+  max-width: 300px;
 }
 
 .container {
@@ -51,6 +52,10 @@ div.dataTables_wrapper div.dataTables_info {
         -ms-flex-direction: column;
         flex-direction: column;
   }    
+
+  .ui.grid>.row>[class*="eight wide"].column, .ui.grid>[class*="eight wide"].column {
+    width: 100%!important;
+  }
 }
 
 @media screen and (min-width: 768px) {
